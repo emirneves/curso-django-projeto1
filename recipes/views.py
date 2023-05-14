@@ -8,6 +8,6 @@ def home(request):
     })
 
 
-def my_ip(request):
+# def my_ip(request):
     # ip_publico =  Request.get('https://api.ipify.org/')
-    return HttpResponse('Mostrar Meu IP')
+#    return HttpResponse('Mostrar Meu IP')
