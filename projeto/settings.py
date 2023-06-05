@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-w)pn5!sb$y97((q#%u+$icz&k@4m1=eith(zgnhvj7r+1r9**2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Informar os apps criados *EMIR*
+    # A gente tem apps também
     'recipes',
 ]
 
@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'base_templates'
+            BASE_DIR / 'base_templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -127,6 +127,7 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = BASE_DIR / 'static'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 

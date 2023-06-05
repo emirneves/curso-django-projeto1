@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 from utils.recipes.factory import make_recipe
 
 
@@ -14,8 +13,7 @@ def recipe(request, id):
         'recipe': make_recipe(),
         'is_detail_page': True,
     })
-
-
+	
 # def my_ip(request):
     # ip_publico =  Request.get('https://api.ipify.org/')
 #    return HttpResponse('Mostrar Meu IP')
